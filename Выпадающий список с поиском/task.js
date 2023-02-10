@@ -69,16 +69,17 @@ class Autocomplete {
   
     getMatches( text ) {
         let options = this.input.options;
-        let arrSelect = [];
+        let arr = [];
+
           for (let i = 0; i < options.length; i++){
     
             if (options[i].text.includes(text)) {
-              arrSelect.push({ text: options[i].text, value: options[i].value })
+              arr.push({ text: options[i].text, value: options[i].value })
             }
             
           }
     
-          return arrSelect;
+          return arr;
       }
          
         /*

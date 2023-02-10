@@ -18,7 +18,7 @@ addMessage("Приветствую Вас") // приветственное со
 
 document.addEventListener('keyup', e => {
 
-    if (e.key === "Enter" && message.length !== 0) {
+    if (e.key === "Enter" && message.trim().length !== 0) {
         addMessage(message, true)
         getAnswer()
 
